@@ -6,11 +6,14 @@ abstract final class ProjectsData {
       id: 'b2b-dashboard',
       slug: 'b2b-dashboard',
       titleKey: 'projectB2bDashboardTitle',
-      shortDescriptionKey: 'projectB2bDashboardShortDescription',
-      fullDescriptionKey: 'projectB2bDashboardFullDescription',
+      shortDescriptionKey:
+          'projectB2bDashboardShortDescription',
+      fullDescriptionKey:
+          'projectB2bDashboardFullDescription',
       typeKey: 'projectTypeWebDashboard',
       roleKey: 'projectRoleFlutterDeveloper',
-      coverImage: 'assets/images/projects/b2b_dashboard/cover.png',
+      coverImage:
+          'assets/images/projects/b2b_dashboard/cover.webp',
       screenshots: [
         'assets/images/projects/b2b_dashboard/dashboard_light.png',
         'assets/images/projects/b2b_dashboard/suppliers_dark.png',
@@ -39,8 +42,7 @@ abstract final class ProjectsData {
         'projectFeatureSearchFilter',
         'projectFeatureLocalizationThemes',
       ],
-      githubUrl:
-          'https://github.com/ibrahem137/B2B-Smart-Ordering-System-Dashboard',
+      githubUrl: 'https://github.com/ibrahem137/B2B-Smart-Ordering-System-Dashboard',
       liveUrl: null,
       year: '',
       featured: true,
@@ -49,11 +51,13 @@ abstract final class ProjectsData {
       id: 'b2b-mobile',
       slug: 'b2b-mobile',
       titleKey: 'projectB2bMobileTitle',
-      shortDescriptionKey: 'projectB2bMobileShortDescription',
+      shortDescriptionKey:
+          'projectB2bMobileShortDescription',
       fullDescriptionKey: 'projectB2bMobileFullDescription',
       typeKey: 'projectTypeMobileApplication',
       roleKey: 'projectRoleFlutterDeveloper',
-      coverImage: 'assets/images/projects/b2b_mobile/cover.png',
+      coverImage:
+          'assets/images/projects/b2b_mobile/cover.webp',
       screenshots: [
         'assets/images/projects/b2b_mobile/home.png',
         'assets/images/projects/b2b_mobile/catalog.png',
@@ -92,11 +96,14 @@ abstract final class ProjectsData {
       id: 'gym-dashboard',
       slug: 'gym-dashboard',
       titleKey: 'projectGymDashboardTitle',
-      shortDescriptionKey: 'projectGymDashboardShortDescription',
-      fullDescriptionKey: 'projectGymDashboardFullDescription',
+      shortDescriptionKey:
+          'projectGymDashboardShortDescription',
+      fullDescriptionKey:
+          'projectGymDashboardFullDescription',
       typeKey: 'projectTypeWebDashboard',
       roleKey: 'projectRoleFlutterDeveloper',
-      coverImage: 'assets/images/projects/gym_dashboard/cover.png',
+      coverImage:
+          'assets/images/projects/gym_dashboard/cover.webp',
       screenshots: [
         'assets/images/projects/gym_dashboard/dashboard.jpg',
         'assets/images/projects/gym_dashboard/members.png',
