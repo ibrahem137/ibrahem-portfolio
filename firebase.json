@@ -1,16 +1,1 @@
-{
-  "hosting": {
-    "public": "build/web",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
-}
+{"hosting":{"public":"build/web","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]},"flutter":{"platforms":{"android":{"default":{"projectId":"ibrahem-portfolio","appId":"1:1082598455865:android:d8bd184bae54939b8e6be8","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"ibrahem-portfolio","configurations":{"android":"1:1082598455865:android:d8bd184bae54939b8e6be8","ios":"1:1082598455865:ios:518f0a0b7b9f41978e6be8","macos":"1:1082598455865:ios:518f0a0b7b9f41978e6be8","web":"1:1082598455865:web:19f40e63dae7665f8e6be8","windows":"1:1082598455865:web:d9e0b79b5f409c7d8e6be8"}}}}}}

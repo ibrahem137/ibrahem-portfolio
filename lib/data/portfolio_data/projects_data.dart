@@ -87,7 +87,7 @@ abstract final class ProjectsData {
         'projectFeatureLocalization',
         'projectFeatureSecureAuthentication',
       ],
-      githubUrl: '',
+      githubUrl: 'https://github.com/ibrahem137/B2B-Smart-Ordering-System-Mobile-App.git',
       liveUrl: null,
       year: '',
       featured: true,
@@ -130,7 +130,8 @@ abstract final class ProjectsData {
         'projectFeatureAuthentication',
         'projectFeatureSettings',
       ],
-      githubUrl: '',
+      githubUrl:
+          'https://github.com/ibrahem137/Gym-Dashboard.git',
       liveUrl: null,
       year: '',
       featured: false,
