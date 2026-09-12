@@ -13,16 +13,22 @@ import '../../../l10n/app_localizations.dart';
 class HeroSection extends StatelessWidget {
   final VoidCallback onViewWorkPressed;
 
-  const HeroSection({super.key, required this.onViewWorkPressed});
+  const HeroSection({
+    super.key,
+    required this.onViewWorkPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final isRtl = Directionality.of(context) == TextDirection.rtl;
+    final isRtl =
+        Directionality.of(context) == TextDirection.rtl;
 
     return ResponsiveContainer(
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: context.isMobile ? 56 : 88),
+        padding: EdgeInsets.symmetric(
+          vertical: context.isMobile ? 56 : 88,
+        ),
         child: context.isDesktop
             ? Row(
                 children: [
@@ -37,8 +43,12 @@ class HeroSection extends StatelessWidget {
                   Expanded(
                     flex: 4,
                     child: StaggeredReveal(
-                      delay: const Duration(milliseconds: 180),
-                      duration: const Duration(milliseconds: 750),
+                      delay: const Duration(
+                        milliseconds: 180,
+                      ),
+                      duration: const Duration(
+                        milliseconds: 750,
+                      ),
                       offsetX: isRtl ? -18 : 18,
                       offsetY: 0,
                       child: const _HeroImage(),
@@ -49,8 +59,12 @@ class HeroSection extends StatelessWidget {
             : Column(
                 children: [
                   StaggeredReveal(
-                    delay: const Duration(milliseconds: 120),
-                    duration: const Duration(milliseconds: 700),
+                    delay: const Duration(
+                      milliseconds: 120,
+                    ),
+                    duration: const Duration(
+                      milliseconds: 700,
+                    ),
                     offsetY: 18,
                     child: const _HeroImage(),
                   ),
@@ -70,7 +84,10 @@ class _HeroContent extends StatelessWidget {
   final AppLocalizations l10n;
   final VoidCallback onViewWorkPressed;
 
-  const _HeroContent({required this.l10n, required this.onViewWorkPressed});
+  const _HeroContent({
+    required this.l10n,
+    required this.onViewWorkPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -85,7 +102,9 @@ class _HeroContent extends StatelessWidget {
           delay: const Duration(milliseconds: 50),
           child: Text(
             l10n.heroGreeting,
-            textAlign: centered ? TextAlign.center : TextAlign.start,
+            textAlign: centered
+                ? TextAlign.center
+                : TextAlign.start,
             style: context.textTheme.titleMedium?.copyWith(
               color: context.colors.primary,
               fontWeight: FontWeight.w600,
@@ -97,10 +116,11 @@ class _HeroContent extends StatelessWidget {
           delay: const Duration(milliseconds: 120),
           child: Text(
             l10n.heroName,
-            textAlign: centered ? TextAlign.center : TextAlign.start,
-            style: context.textTheme.displayMedium?.copyWith(
-              fontWeight: FontWeight.w800,
-            ),
+            textAlign: centered
+                ? TextAlign.center
+                : TextAlign.start,
+            style: context.textTheme.displayMedium
+                ?.copyWith(fontWeight: FontWeight.w800),
           ),
         ),
         const SizedBox(height: AppSpacing.md),
@@ -108,23 +128,32 @@ class _HeroContent extends StatelessWidget {
           delay: const Duration(milliseconds: 190),
           child: Text(
             l10n.heroRole,
-            textAlign: centered ? TextAlign.center : TextAlign.start,
-            style: context.textTheme.headlineMedium?.copyWith(
-              color: context.colors.primary,
-              fontWeight: FontWeight.w700,
-            ),
+            textAlign: centered
+                ? TextAlign.center
+                : TextAlign.start,
+            style: context.textTheme.headlineMedium
+                ?.copyWith(
+                  color: context.colors.primary,
+                  fontWeight: FontWeight.w700,
+                ),
           ),
         ),
         const SizedBox(height: AppSpacing.lg),
         StaggeredReveal(
           delay: const Duration(milliseconds: 260),
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 700),
+            constraints: const BoxConstraints(
+              maxWidth: 700,
+            ),
             child: Text(
               l10n.heroDescription,
-              textAlign: centered ? TextAlign.center : TextAlign.start,
+              textAlign: centered
+                  ? TextAlign.center
+                  : TextAlign.start,
               style: context.textTheme.bodyLarge?.copyWith(
-                color: context.colors.onSurface.withValues(alpha: 0.72),
+                color: context.colors.onSurface.withValues(
+                  alpha: 0.72,
+                ),
               ),
             ),
           ),
@@ -133,13 +162,17 @@ class _HeroContent extends StatelessWidget {
         StaggeredReveal(
           delay: const Duration(milliseconds: 330),
           child: Wrap(
-            alignment: centered ? WrapAlignment.center : WrapAlignment.start,
+            alignment: centered
+                ? WrapAlignment.center
+                : WrapAlignment.start,
             spacing: AppSpacing.sm,
             runSpacing: AppSpacing.sm,
             children: [
               FilledButton.icon(
                 onPressed: onViewWorkPressed,
-                icon: const Icon(Icons.arrow_downward_rounded),
+                icon: const Icon(
+                  Icons.arrow_downward_rounded,
+                ),
                 label: Text(l10n.viewMyWork),
               ),
               OutlinedButton.icon(
@@ -156,7 +189,9 @@ class _HeroContent extends StatelessWidget {
         StaggeredReveal(
           delay: const Duration(milliseconds: 400),
           child: Wrap(
-            alignment: centered ? WrapAlignment.center : WrapAlignment.start,
+            alignment: centered
+                ? WrapAlignment.center
+                : WrapAlignment.start,
             spacing: AppSpacing.sm,
             children: const [
               _SocialButton(
@@ -197,8 +232,12 @@ class _HeroImage extends StatelessWidget {
               left: 18,
               child: Container(
                 decoration: BoxDecoration(
-                  color: context.colors.primary.withValues(alpha: 0.14),
-                  borderRadius: BorderRadius.circular(AppRadius.xLarge),
+                  color: context.colors.primary.withValues(
+                    alpha: 0.14,
+                  ),
+                  borderRadius: BorderRadius.circular(
+                    AppRadius.xLarge,
+                  ),
                 ),
               ),
             ),
@@ -209,15 +248,20 @@ class _HeroImage extends StatelessWidget {
               left: 0,
               child: Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadius.xLarge),
+                  borderRadius: BorderRadius.circular(
+                    AppRadius.xLarge,
+                  ),
                   border: Border.all(
-                    color: context.colors.primary.withValues(alpha: 0.35),
+                    color: context.colors.primary
+                        .withValues(alpha: 0.35),
                   ),
                 ),
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(AppRadius.xLarge - 1),
+                  borderRadius: BorderRadius.circular(
+                    AppRadius.xLarge - 1,
+                  ),
                   child: Image.asset(
-                    'assets/images/profile/ibrahem_profile.jpg',
+                    'assets/images/profile/ibrahem_profile.png',
                     width: double.infinity,
                     height: double.infinity,
                     fit: BoxFit.cover,
@@ -256,7 +300,9 @@ class _SocialButton extends StatelessWidget {
         minimumSize: const Size(46, 46),
         side: BorderSide(color: context.theme.dividerColor),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(AppRadius.medium),
+          borderRadius: BorderRadius.circular(
+            AppRadius.medium,
+          ),
         ),
       ),
     );
