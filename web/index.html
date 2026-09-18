@@ -31,7 +31,7 @@
 
   <meta
     name="description"
-    content="Flutter Developer and Software Engineering student specializing in modern mobile and web applications."
+    content="Ibrahem Alhuossien is a Flutter developer and fifth-year Information Engineering student at the University of Aleppo. Explore his mobile and web projects, skills, and experience."
   >
 
   <meta
@@ -49,6 +49,34 @@
     content="#1E40AF"
   >
 
+  <link rel="canonical" href="https://ibrahem-portfolio.web.app/">
+  <link rel="alternate" hreflang="x-default" href="https://ibrahem-portfolio.web.app/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://ibrahem-portfolio.web.app/#profile",
+    "url": "https://ibrahem-portfolio.web.app/",
+    "name": "Ibrahem Alhuossien | Flutter Developer",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://ibrahem-portfolio.web.app/#ibrahem",
+      "name": "Ibrahem Alhuossien",
+      "alternateName": "إبراهيم الحسين",
+      "url": "https://ibrahem-portfolio.web.app/",
+      "image": "https://ibrahem-portfolio.web.app/assets/assets/images/profile/ibrahem_profile.png",
+      "jobTitle": "Flutter Developer",
+      "description": "Flutter developer and fifth-year Information Engineering student at the University of Aleppo.",
+      "sameAs": [
+        "https://github.com/ibrahem137",
+        "https://www.linkedin.com/in/ibrahem-alhuossien-92b0a5379",
+        "https://www.instagram.com/ibrahem.h137"
+      ]
+    }
+  }
+  </script>
+
   <!-- Open Graph -->
   <meta
     property="og:title"
@@ -57,7 +85,7 @@
 
   <meta
     property="og:description"
-    content="Flutter Developer and Software Engineering student specializing in modern mobile and web applications."
+    content="Ibrahem Alhuossien is a Flutter developer and fifth-year Information Engineering student at the University of Aleppo. Explore his mobile and web projects, skills, and experience."
   >
 
   <meta
@@ -67,8 +95,11 @@
 
   <meta
     property="og:image"
-    content="icons/Icon-512.png"
+    content="https://ibrahem-portfolio.web.app/assets/assets/images/profile/ibrahem_profile.png"
   >
+
+  <meta property="og:url" content="https://ibrahem-portfolio.web.app/">
+  <meta property="og:site_name" content="Ibrahem Alhuossien Portfolio">
 
   <!-- Twitter / Social Preview -->
   <meta
@@ -83,12 +114,12 @@
 
   <meta
     name="twitter:description"
-    content="Flutter Developer and Software Engineering student specializing in modern mobile and web applications."
+    content="Ibrahem Alhuossien is a Flutter developer and fifth-year Information Engineering student at the University of Aleppo. Explore his mobile and web projects, skills, and experience."
   >
 
   <meta
     name="twitter:image"
-    content="icons/Icon-512.png"
+    content="https://ibrahem-portfolio.web.app/assets/assets/images/profile/ibrahem_profile.png"
   >
 
   <!-- Mobile / PWA -->
@@ -133,6 +164,17 @@
 </head>
 
 <body>
+  <main id="portfolio-intro" style="font: 16px/1.6 system-ui, sans-serif; max-width: 760px; margin: 12vh auto; padding: 24px; color: #162447;">
+    <h1>Ibrahem Alhuossien — Flutter Developer</h1>
+    <p>إبراهيم الحسين، مطوّر Flutter وطالب في السنة الخامسة في كلية الهندسة المعلوماتية بجامعة حلب.</p>
+    <p>I build mobile and web applications with Flutter and Dart. Explore my projects, skills, and experience in the interactive portfolio.</p>
+    <p><a href="https://github.com/ibrahem137">GitHub</a> · <a href="https://www.linkedin.com/in/ibrahem-alhuossien-92b0a5379">LinkedIn</a> · <a href="mailto:ibrahemalhuossienbusiness@gmail.com">Email</a></p>
+  </main>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      document.getElementById('portfolio-intro')?.remove();
+    }, { once: true });
+  </script>
   <!--
     You can customize the "flutter_bootstrap.js" script.
 
