@@ -313,13 +313,7 @@
     );
 
     // إذا فشل Flutter، نظهر المحتوى الاحتياطي بدل بقاء شاشة التحميل
-    setTimeout(function () {
-      const loading = document.getElementById('app-loading');
 
-      if (loading && document.querySelector('flt-glass-pane') === null) {
-        loading.remove();
-      }
-    }, 15000);
   </script>
 
   <script src="flutter_bootstrap.js" async></script>
