@@ -94,6 +94,11 @@ class ContactSection extends StatelessWidget {
                   icon: Icons.camera_alt_outlined,
                   url: AppLinks.instagram,
                 ),
+                const _ContactButton(
+                  label: 'Facebook',
+                  icon: Icons.facebook_rounded,
+                  url: AppLinks.facebook,
+                ),
               ];
 
               final Widget actions;

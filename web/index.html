@@ -50,6 +50,8 @@
   >
 
   <link rel="canonical" href="https://ibrahem-portfolio.web.app/">
+  <link rel="alternate" hreflang="en" href="https://ibrahem-portfolio.web.app/">
+  <link rel="alternate" hreflang="ar" href="https://ibrahem-portfolio.web.app/ar/">
   <link rel="alternate" hreflang="x-default" href="https://ibrahem-portfolio.web.app/">
 
   <script type="application/ld+json">
@@ -63,15 +65,24 @@
       "@type": "Person",
       "@id": "https://ibrahem-portfolio.web.app/#ibrahem",
       "name": "Ibrahem Alhuossien",
-      "alternateName": "إبراهيم الحسين",
+      "alternateName": [
+        "إبراهيم الحسين",
+        "ابراهيم الحسين",
+        "Ibrahem Al Hussein"
+      ],
       "url": "https://ibrahem-portfolio.web.app/",
-      "image": "https://ibrahem-portfolio.web.app/assets/assets/images/profile/ibrahem_profile.png",
+      "image": [
+        "https://ibrahem-portfolio.web.app/images/ibrahem-alhuossien-flutter-developer.jpg",
+        "https://ibrahem-portfolio.web.app/images/ibrahem-alhuossien-profile.png",
+        "https://ibrahem-portfolio.web.app/images/ibrahem-alhuossien-university-of-aleppo.jpg"
+      ],
       "jobTitle": "Flutter Developer",
       "description": "Flutter developer and fifth-year Information Engineering student at the University of Aleppo.",
       "sameAs": [
         "https://github.com/ibrahem137",
         "https://www.linkedin.com/in/ibrahem-alhuossien-92b0a5379",
-        "https://www.instagram.com/ibrahem.h137"
+        "https://www.instagram.com/ibrahem.h137/",
+        "https://www.facebook.com/ibrahem.alhussein.75"
       ]
     }
   }
@@ -95,7 +106,7 @@
 
   <meta
     property="og:image"
-    content="https://ibrahem-portfolio.web.app/assets/assets/images/profile/ibrahem_profile.png"
+    content="https://ibrahem-portfolio.web.app/images/ibrahem-alhuossien-flutter-developer.jpg"
   >
 
   <meta property="og:url" content="https://ibrahem-portfolio.web.app/">
@@ -119,7 +130,7 @@
 
   <meta
     name="twitter:image"
-    content="https://ibrahem-portfolio.web.app/assets/assets/images/profile/ibrahem_profile.png"
+    content="https://ibrahem-portfolio.web.app/images/ibrahem-alhuossien-flutter-developer.jpg"
   >
 
   <!-- Mobile / PWA -->
@@ -164,30 +175,153 @@
 </head>
 
 <body>
-  <main id="portfolio-intro" style="font: 16px/1.6 system-ui, sans-serif; max-width: 760px; margin: 12vh auto; padding: 24px; color: #162447;">
+  <!-- شاشة التحميل -->
+  <div id="app-loading">
+    <div class="loading-logo">IA</div>
+
+    <h1>Ibrahem Alhuossien</h1>
+    <p>Flutter Developer</p>
+
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- محتوى احتياطي ومحسّن لمحركات البحث -->
+  <main id="portfolio-intro">
     <h1>Ibrahem Alhuossien — Flutter Developer</h1>
-    <p>إبراهيم الحسين، مطوّر Flutter وطالب في السنة الخامسة في كلية الهندسة المعلوماتية بجامعة حلب.</p>
-    <p>I build mobile and web applications with Flutter and Dart. Explore my projects, skills, and experience in the interactive portfolio.</p>
-    <p><a href="https://github.com/ibrahem137">GitHub</a> · <a href="https://www.linkedin.com/in/ibrahem-alhuossien-92b0a5379">LinkedIn</a> · <a href="mailto:ibrahemalhuossienbusiness@gmail.com">Email</a></p>
+
+    <p>
+      إبراهيم الحسين، مطوّر Flutter وطالب في السنة الخامسة في كلية
+      الهندسة المعلوماتية بجامعة حلب.
+    </p>
+
+    <p>
+      I build mobile and web applications with Flutter and Dart.
+      Explore my projects, skills, and experience in the interactive portfolio.
+    </p>
+
+    <p>
+      <a href="/ar/" lang="ar">الصفحة العربية لإبراهيم الحسين</a>
+    </p>
+
+    <p>
+      <a href="https://github.com/ibrahem137">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/ibrahem-alhuossien-92b0a5379">LinkedIn</a> ·
+      <a href="https://www.instagram.com/ibrahem.h137/">Instagram</a> ·
+      <a href="https://www.facebook.com/ibrahem.alhussein.75">Facebook</a> ·
+      <a href="mailto:ibrahemalhuossienbusiness@gmail.com">Email</a>
+    </p>
   </main>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: #07152f;
+    }
+
+    #app-loading {
+      position: fixed;
+      inset: 0;
+      z-index: 999999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      padding: 24px;
+      color: #ffffff;
+      background:
+        radial-gradient(circle at 50% 35%, #173d7a 0%, #0b2148 35%, #07152f 70%);
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      transition: opacity 300ms ease;
+    }
+
+    .loading-logo {
+      width: 82px;
+      height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      border: 2px solid rgba(96, 165, 250, 0.8);
+      border-radius: 24px;
+      color: #60a5fa;
+      background: rgba(30, 64, 175, 0.25);
+      box-shadow: 0 0 35px rgba(59, 130, 246, 0.25);
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    #app-loading h1 {
+      margin: 0;
+      font-size: clamp(24px, 5vw, 34px);
+      font-weight: 700;
+    }
+
+    #app-loading p {
+      margin: 10px 0 28px;
+      color: #94a3b8;
+      font-size: 16px;
+    }
+
+    .loading-spinner {
+      width: 30px;
+      height: 30px;
+      border: 3px solid rgba(255, 255, 255, 0.15);
+      border-top-color: #3b82f6;
+      border-radius: 50%;
+      animation: loading-spin 800ms linear infinite;
+    }
+
+    @keyframes loading-spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    #portfolio-intro {
+      max-width: 760px;
+      margin: 12vh auto;
+      padding: 24px;
+      color: #162447;
+      background: #ffffff;
+      font: 16px/1.6 system-ui, sans-serif;
+    }
+  </style>
+
   <script>
-    window.addEventListener('flutter-first-frame', function () {
-      document.getElementById('portfolio-intro')?.remove();
-    }, { once: true });
+    window.addEventListener(
+      'flutter-first-frame',
+      function () {
+        const loading = document.getElementById('app-loading');
+
+        if (loading) {
+          loading.style.opacity = '0';
+
+          setTimeout(function () {
+            loading.remove();
+          }, 300);
+        }
+
+        document.getElementById('portfolio-intro')?.remove();
+      },
+      { once: true }
+    );
+
+    // إذا فشل Flutter، نظهر المحتوى الاحتياطي بدل بقاء شاشة التحميل
+    setTimeout(function () {
+      const loading = document.getElementById('app-loading');
+
+      if (loading && document.querySelector('flt-glass-pane') === null) {
+        loading.remove();
+      }
+    }, 15000);
   </script>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
 
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
-
-    For more details:
-    https://docs.flutter.dev/platform-integration/web/initialization
-  -->
-
-  <script
-    src="flutter_bootstrap.js"
-    async
-  ></script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

@@ -16,4 +16,7 @@ abstract final class AppLinks {
 
   static const String instagram =
       'https://www.instagram.com/ibrahem.h137';
+
+  static const String facebook =
+      'https://www.facebook.com/ibrahem.alhussein.75';
 }
